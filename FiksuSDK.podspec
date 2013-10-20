@@ -7,7 +7,9 @@ Pod::Spec.new do |s|
   s.author = { 'Fiksu' => 'support@fiksu.com' }
   s.platform = :ios
 
-  s.resources  = "FiksuSDK.embeddedframework/FiksuSDK.framework/Resources/*.*"
+  s.source = { :git => 'https://github.com/navied/fiksu-ios.git', :tag => '3.6' }
+
+  s.resources  = "FiksuSDK.embeddedframework/Resources/*"
 
   s.public_header_files = 'FiksuSDK.embeddedframework/FiksuSDK.framework/**/*.h'
   s.preserve_paths = 'FiksuSDK.embeddedframework/FiksuSDK.framework'
